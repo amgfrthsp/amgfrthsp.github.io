@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Marina Gruzdeva} \\ \vspace{15pt}
+    \small 2 Makovskogo Street, Odintsovo, 143006, Russia \\ \vspace{10pt}
+    \small +7(996)930-62-44 $|$ \href{mailto:marinag1899@mail.ru}{\underline{marinag1899@mail.ru}} $|$ 
+    \href{https://github.com/amgfrthsp}{\underline{github.com/amgfrthsp}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Higher School of Economics}}{Moscow, Russia}
+      {Bachelor of Mathematics and Computer Science}{Sep. 2020 -- Present}
+    \resumeSubheading
+      {\textbf{Relevant Courses:}\\ Algorithms and Data Structures, Advanced C++,\\ Computer Architecture and Operating Systems,\\ Linear Algebra, Calculus}{}{}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Working Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Software Engineering Internship} $|$ \emph{Java, TypeScript + React}}
+      {Moscow, Russia}
+      {Yandex.Zen -- one of the biggest Russian blog platforms}
+      {Jul. 2021 -- Oct. 2021}
+      \resumeItemListStart
+        \resumeItem{Worked in Feed Functionality Group -- recommender subsection}
+        \resumeItem{Developed an admin panel for user-friendly and optimized document moderation}
+        \resumeItem{Implemented backend pipelines for moderation, classification and recommendation processes}
+        \resumeItem{Gained experience in distributed systems}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Smart pointers implementation} $|$ \emph{C++}}{Oct 2021}
+          \resumeItemListStart
+            \resumeItem{Implemented C++ unique, shared, weak pointers}
+            \resumeItem{Github repository: \href{https://github.com/amgfrthsp/smart-pointers-implementation}{\underline{github.com/amgfrthsp/smart-pointers-implementation}}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Yandex Music Telegram Bot} $|$ \emph{Python, BeautifulSoup, Telebot}}{Jul. 2021}
+          \resumeItemListStart
+            \resumeItem{Wrote a bot which calculated Yandex Music users music compatibility}
+            \resumeItem{Created main logic using Python}
+            \resumeItem{Wrote UI using telebot -- Telegram API wrapper}
+            \resumeItem{Github repository: \href{https://github.com/amgfrthsp/music-compatibility-bot}{\underline{github.com/amgfrthsp/music-compatibility-bot}}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{HashMap implementation} $|$ \emph{C++}}{March 2021}
+          \resumeItemListStart
+            \resumeItem{Wrote HashMap implementation based on chaining method}
+            \resumeItem{Github repository: \href{https://github.com/amgfrthsp/HSE.HashMap}{\underline{github.com/amgfrthsp/HSE.HashMap}}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd      
+    
+
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Moscow Olympiad in Informatics, 2020}}{\emph{May, 2020}}
+      {Gold medalist – 10-th place of about 600 participants}{}
+    \resumeSubheading
+      {\textbf{Individual Olympiad in Informatics, 2020}}{\emph{Apr, 2020}}
+      {Bronze medalist - 66-th place of about 1200 participants}{}
+    \resumeSubheading
+      {\textbf{Saint Petersburg State University Olympiad in Informatics, 2020}}{\emph{March, 2020}}
+      {Silver Medalist - 121-st place of about 2300 participants}{}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, TypeScript, SQL} \\
+     \textbf{Frameworks}{: Spring} \\
+     \textbf{Developer Tools}{: Git} \\
+     \textbf{Libraries}{: React, NumPy, Pandas, Matplotlib, Seaborn, BeautifulSoup}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
