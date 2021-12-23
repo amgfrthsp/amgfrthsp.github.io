@@ -20,4 +20,3 @@ jobs:
           git add .
           git commit -am "Auto update cv"
           git push
-~                  
