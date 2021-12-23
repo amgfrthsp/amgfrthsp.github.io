@@ -19,4 +19,4 @@ jobs:
           git config --global user.email 'marinag1899@mail.ru'
           git add .
           git commit -am "Auto update cv"
-          git push origin HEAD:cv_pdf
+          git push -f origin HEAD:cv_pdf
