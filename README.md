@@ -1,5 +1,5 @@
 # Missing Semester Homework 
-Name: Gruzdeva Marina Evgenevna
+Name: Gruzdeva Marina
 
 Group: AMI 205
 
