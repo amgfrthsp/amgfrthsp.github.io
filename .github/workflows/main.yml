@@ -1,0 +1,23 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: A job to build docker container and compile cv
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: create docker container image
+        run: docker build --tag cv_image -f Dockerfile .
+      - name: run docker container with mounted cv folder
+        run: docker run -v ${{github.WORKSPACE}}/cv:/cv cv_image
+      - name: move resume to repo root
+        run: mv ${{github.WORKSPACE}}/cv/main.pdf ${{github.WORKSPACE}}/cv.pdf
+      - name: Commit changes
+        run: |
+          git config --global user.name 'Marina Gruzdeva'
+          git config --global user.email 'marinag1899@mail.ru'
+          git add .
+          git commit -am "Auto update cv"
+          git push
+~                  
