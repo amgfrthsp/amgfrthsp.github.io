@@ -11,8 +11,8 @@ jobs:
         run: docker build --tag cv_image -f Dockerfile .
       - name: run docker container with mounted cv folder
         run: docker run -v ${{github.WORKSPACE}}/cv:/cv cv_image
-      - name: move resume to repo root
-        run: mv ${{github.WORKSPACE}}/cv/main.pdf ${{github.WORKSPACE}}/cv.pdf
+      - name: rename resume
+        run: mv ${{github.WORKSPACE}}/cv/main.pdf ${{github.WORKSPACE}}/cv/resume.pdf
       - name: Commit changes
         run: |
           git config --global user.name 'Marina Gruzdeva'
