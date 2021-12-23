@@ -19,7 +19,7 @@ jobs:
           git config --global user.email 'marinag1899@mail.ru'
           git add .
           git stash
-          git checkout cv_pdf
+          git checkout refs/heads/cv_pdf
           git stash apply
           git commit -am "Auto update cv"
           git push
